@@ -52,15 +52,10 @@
                 Console.WriteLine(season);
             }
 
-            else if(month == "decamber " || month == " january" || month == "feburary" )
+            else
             {
                 SeasOn season = SeasOn.Winter;
                 Console.WriteLine(season);
-            }
-
-            else
-            {
-                Console.WriteLine("Invalid Input");
             }
 
             #endregion
