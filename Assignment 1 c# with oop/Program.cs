@@ -11,13 +11,13 @@
     {
         static void Main(string[] args)
         {
-            #region MyRegion 1 
+            //#region MyRegion 1 
 
-            WeekDays Day = (WeekDays) 127 ;
+            //WeekDays Day = (WeekDays) 127 ;
 
-            Console.WriteLine(Day);
+            //Console.WriteLine(Day);
 
-            #endregion
+            //#endregion
         }
     }
 }
