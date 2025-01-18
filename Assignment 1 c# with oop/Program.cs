@@ -2,12 +2,16 @@
 {
     [Flags]
 
-
-    enum SeasOn
+    enum Premission:byte
     {
-        Spring, Summer, Autumn, Winter
-
+        Read = 1, write = 2, Delete = 4, Execute = 8 , Test = 16
     }
+
+    //enum SeasOn
+    //{
+    //    Spring, Summer, Autumn, Winter
+
+    //}
 
 
     ////enum WeekDays:byte
@@ -31,33 +35,41 @@
 
 
 
-            Console.WriteLine("Please Enter The Month :");
-            string month = Console.ReadLine();
-            if (month == "march " || month == " april" || month == "may")
-            {
-                SeasOn season = SeasOn.Spring;
-                Console.WriteLine(season);
-            }
+            //Console.WriteLine("Please Enter The Month :");
+            //string month = Console.ReadLine();
+            //if (month == "march " || month == " april" || month == "may")
+            //{
+            //    SeasOn season = SeasOn.Spring;
+            //    Console.WriteLine(season);
+            //}
 
 
-            else if (month == "june " || month == " july" || month == "august")
-            {
-                SeasOn season = SeasOn.Summer;
-                Console.WriteLine(season);
-            }
+            //else if (month == "june " || month == " july" || month == "august")
+            //{
+            //    SeasOn season = SeasOn.Summer;
+            //    Console.WriteLine(season);
+            //}
 
-            else if (month == "septembar " || month == "october " || month == "november")
-            {
-                SeasOn season = SeasOn.Autumn;
-                Console.WriteLine(season);
-            }
+            //else if (month == "septembar " || month == "october " || month == "november")
+            //{
+            //    SeasOn season = SeasOn.Autumn;
+            //    Console.WriteLine(season);
+            //}
 
-            else
-            {
-                SeasOn season = SeasOn.Winter;
-                Console.WriteLine(season);
-            }
+            //else
+            //{
+            //    SeasOn season = SeasOn.Winter;
+            //    Console.WriteLine(season);
+            //}
 
+            #endregion
+
+            #region MyRegion 3
+            Premission MyP = (Premission) 31 ;
+            MyP |= Premission.Test;
+            MyP &= ~(Premission.Test);
+
+            Console.WriteLine(MyP);
             #endregion
 
         }
