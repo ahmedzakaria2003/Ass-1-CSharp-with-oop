@@ -58,6 +58,10 @@
                 Console.WriteLine(season);
             }
 
+            else
+            {
+                Console.WriteLine("Invalid Input");
+            }
 
             #endregion
 
